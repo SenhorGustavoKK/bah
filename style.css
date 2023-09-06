@@ -1,0 +1,164 @@
+
+:root{
+    --cor-de-fundo:#ffffff;
+    --branco: #002F52;
+    --laranja: #EB9B00;
+    --azul-degrade: linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
+    --fonte-principal: "Poppins";
+}
+body{
+    background-color: var(--cor-de-fundo);
+    font-family: var(--fonte-principal);
+    font-size: 1em;
+    font-weight: 700;
+
+}
+
+
+.cabeçalho_menu-hamburguer {
+    width: 24px;
+    height: 24px;
+    background-image: url(./img/Menu.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+    
+}
+
+
+
+.cabeçalho {
+        background-color: #ffffff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        }
+
+
+
+
+
+        
+.container {
+            display: flex;
+            align-items: center;
+            }
+
+.container_imagem {
+            padding: 1em;
+            margin: 1em;
+            width: 5em;
+
+                }
+ .container_botão:checked ~ .lista-menu {
+                    display: block;
+                    }
+                    
+.lista-menu {
+ display: inline-block;
+ position: absolute;
+ top: 100%;
+ width: 20vw;
+                    }
+
+ .lista-menu__titulo,
+ .lista-menu__item {
+        padding: 1em;
+        background-color: var(--branco);
+                    }
+
+.lista-menu__titulo {
+                        color: var(--laranja);
+                    font-weight: 700;}
+
+
+                        
+.lista-menu__link {
+  background: var(--azul-degrade);
+-webkit-background-clip: text;
+ -webkit-text-fill-color: transparent;
+background-clip: 
+uppercase; }
+.container_botão {
+    display: none;
+}
+
+.lista-menu {
+    display: none;
+}
+
+.banner{
+    background-color: #002F52;
+    color: #ffffff;
+    text-align: center;
+  
+}
+.banner-titulo{
+    font-size: 60px;
+    font-weight: 700;
+}
+.banner-texto{
+    font-weight: 500;
+    font-size: 40px;
+    text-align: justify;
+    text-align: center;
+}
+
+.banner-pesquisa {
+    background-color: transparent;
+    border: 2px solid black;
+    color: black;
+    border-radius: 24px;
+    padding: 1em;
+    width: 100%;
+    text-align: center;
+    background: url("./img/lupa.svg") no-repeat ;
+    background-position: 1em;
+    font-size: 20px;
+    }
+
+
+
+
+
+.carrossel__titulo {
+        color: var(--laranja);
+        background-color: var(--branco);
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 18px;
+        font-weight: 700;
+        padding: 1em 0 0.5em 0;
+        }
+
+        .descricao-imagem{ width: 400px;;}
+
+ .swiper-slide img{ width:60%;}  
+        
+    .card-decricao{ display: flex;
+    justify-content: space-between;
+    margin-bottom:0,2em;} 
+
+    .card-botoes{
+        display:flex;
+        justify-content: space-between;  
+    }
+
+        .botoes{ display: flex;}
+
+        .card{
+            background: var(#000000);
+            box-shadow:10px 10px 10px #3d3a3a;
+            border-radius: 10px;
+            margin: 1em;
+            padding: 1em;
+        }
+        
+        .descricao-titulo{
+            color: var(--laranja);
+            font-weight: 700;
+            text-align: center;
+        }
+ 
+ 
